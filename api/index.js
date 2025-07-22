@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   if (req.url === "/qr") {
     res.status(200).send(`
       <html>
@@ -27,4 +27,4 @@ export default function handler(req, res) {
       </body>
     </html>
   `);
-}
+};
